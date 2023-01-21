@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+#Header{
+    max-width: 100%;
+    max-height: 80px;
+    background-color: rgba(135, 131, 209);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo img{
+    object-fit: cover;
+
+}
+#menu-bar{
+    margin-right: 30px;
+    list-style: none;
+    display: inline-flex;
+    gap: 15px;
+}
+
+#menu {
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    color: aliceblue;;
+}
+
+#dropdown{
+    list-style: none;
+}
+
+#drpbutton{
+    text-decoration: none;
+    display: block;
+    padding: 5px 12px;
+    color: aliceblue;
+}
+
+#drp-item{
+    text-decoration: none;
+    color: aliceblue;
+    position: absolute;
+    top: 53px;
+    right: 206.5px;
+   min-width: 50px;
+    display: none;
+   z-index: 1;
+   
+}
+
+#drp-item a{
+    text-decoration: none;
+    padding: 3px 8px;
+    display: block;
+
+}
+
+#menu:hover, #dropdown:hover #drpbutton{
+    background-color: rgba(170, 154, 186);
+}
+
+#dropdown:hover #drp-item{
+    display: block;
+}
+#drp-item a:hover{
+    background-color:rgba(170, 154, 186);
+}
+
