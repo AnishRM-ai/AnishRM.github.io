@@ -3,11 +3,15 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 
+}
+/* Header and navigation bar*/
 #Header{
+    position: fixed;
     min-width: 100%;
     min-height: 70px;
-    background-color: rgba(135, 131, 209);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -47,7 +51,7 @@
 }
 
 #drp-item{
-    
+    padding: 10px;
     text-decoration: none;
     position: absolute;
     top: 53px;
@@ -58,7 +62,6 @@
 }
 
 #drp-item a{
-    background-color: rgba(135, 131, 209) ;
     color: aliceblue;
     text-decoration: none;
     padding: 3px 8px;
@@ -93,7 +96,57 @@
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
+/* Header and navigation bar*/
 
+
+/* Hero section*/
+#hero{
+    transition: 0.8s ease-in-out;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    padding: 10px;
+    min-width: 100%;
+    min-height: 760px;
+  
+    display: flex;
+    flex-wrap: wrap;
+}
+#call-action{
+    min-width: 60%;
+    min-height: 760px;
+}
+#image-container{
+    margin-left: 150px;
+    margin-top: 100px;
+    height: 400px;
+    height: 400px;
+}
+#h-img{
+    border-radius: 50%;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotation {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* media query for mobile phones.*/
 @media(max-width: 768px){
     .hamburger-menu{
         display: block;;
@@ -114,7 +167,7 @@
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: rgba(135, 131, 209);
+        
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -125,14 +178,16 @@
 
     }
     #drp-item{
+        border: 1px white solid ;
         transition: 0.8s ease-in;
         text-decoration: none;
         position: absolute;
-        width: auto;
-        top: 150px;
-        left:200px;
+        min-width: 200px;
+        font-size: 20px;
+        padding: 10px;
+        top: 60px;
+        left:400px;
         display: none;
-        z-index: 1;
     }
     #menu-bar.active{
         left: 0;
