@@ -1,7 +1,4 @@
-window.onload = function() {
-    document.getElementById("loader").style.display = "none";
-  };
-  
+
 const hamburger = document.querySelector(".hamburger-menu");
 const navmenu = document.querySelector("#menu-bar");
 
