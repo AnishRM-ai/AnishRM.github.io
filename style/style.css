@@ -2,8 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Itim', cursive;
+    color: #E9E8E8;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #7D6E83;
 }
@@ -32,6 +37,7 @@ body{
   
 /* Header and navigation bar*/
 #Header{
+    color: #E9E8E8;
     position: fixed;
     top: 0px;
     align-items: center;
@@ -60,7 +66,7 @@ body{
     padding: 5px 10px;
     text-decoration: none;
     display: block;
-    color: #323232;;
+    color: #E9E8E8;;
 }
 
 #dropdown{
@@ -72,7 +78,7 @@ body{
     text-decoration: none;
     display: block;
     padding: 5px 12px;
-    color: #323232;
+    color: #E9E8E8;
 }
 
 #drp-item{
@@ -119,14 +125,14 @@ body{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #323232;
+    background-color: #E9E8E8;
 }
 /* Header and navigation bar*/
 
 
 /* Hero section*/
 #hero{
-   background-image: url(/Portfolio-website/Portfoio-website/image/hey.jpg);
+   background-image: url(/Portfolio-website/Portfoio-website/image/heroman.gif);
    background-repeat: no-repeat;
    background-size: cover;
     transition: 0.8s ease-in-out;
@@ -139,25 +145,7 @@ body{
     flex-wrap: wrap;
 }
 
-#image-container{
-    margin-left: 150px;
-    margin-top: 100px;
-}
-#h-img{
-    border-radius: 50%;
-    object-fit: cover;
-    animation-name: rotation;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    -webkit-box-reflect:below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-#h-img:hover{
-    cursor: pointer;
-    animation: reverse;
-    
-}
+
 
 #call-action{
   
@@ -175,9 +163,9 @@ body{
     text-decoration: none;
     padding: 10px;
     font-size: 25px;
-    background-color: #323232;
+    background-color: #EF9A53;
     max-width: 150px;
-    color: #DDD0C8;
+    color: white;
 }
 
 #call-me:hover{
@@ -195,7 +183,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     transition: 0.5s ease-out;
     max-width: 100%;
     min-height: 700px;
-    background-color: #cb8655;
+    background-color: #CD5888;
     color: #DDD0C8;
     display: flex;
     flex-wrap: wrap;
@@ -307,7 +295,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     overscroll-behavior: ease;
     width: 100%;
     max-height: 1200px;
-    background-color: #e09b80;
+    background-color: #913175;
 }
 #portfolio-container h1{
     padding-top: 40px;
@@ -377,7 +365,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 #blog-container{
     width: 100%;
     height: 600px;
-    background-color: #7D6E83;
+    background-color: #C539B4;
 }
 #blog-container h1{
     text-align: center;
@@ -399,7 +387,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 #box{
     height: 400px;
     width: 400px;
-    background-color: #DDD0C8;
+    background-color: #e09b80;
     margin-left: 40px;
     margin-top: 50px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -415,10 +403,12 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     transform: translateY(-20px);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+
+/*Contact-container*/
 #contact-container{
     width: 100%;
     height: 700px;
-    background-color: #FFCC70;
+    background-color: #852999;
 }
 #contact-container h1{
     text-align: center;
@@ -438,7 +428,6 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 #contact-num{
     width: 30%;
     height: 600px;
-    background-color: #e09b80;
     padding-top: 200px;
     padding-left: 40px;
 
@@ -452,7 +441,6 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     margin-top: 50px;
     width: 70%;
     height: 550px;
-    background-color: #cb8655;
 }
 
 input[type="text"]{
@@ -595,6 +583,44 @@ input[type="submit"]:hover{
     #about-content{
         width: 100%;
     }
+
+    #portfolio-container{
+        height: auto;
+        position: relative;
+        overflow: scroll;
+    }
+
+    #gallery-container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #second-section{
+        margin-left: 40px;
+    }
+    #blog-container{
+        overflow: scroll;
+    }
+
+    #contact-container{
+        width: 100%;
+        height: auto;
+    }
+
+    #contact-form{
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+   #subject{
+    width: 80%;
+   }
+
+   textarea{
+    width: 100%;
+   }
 }
 
 
