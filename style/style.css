@@ -3,14 +3,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Itim', cursive;
-    color: #E9E8E8;
+    color: #FCE2DB;
 }
 html{
     scroll-behavior: smooth;
-}
-
-body{
-    background-color: #7D6E83;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -19,25 +15,22 @@ body{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
+    display: none;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background:#323232; 
-    border-radius: 10px;
+    display: none;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #333; 
+  display: none;
   }
  
   
 /* Header and navigation bar*/
 #Header{
-    color: #E9E8E8;
     position: fixed;
     top: 0px;
     align-items: center;
@@ -47,11 +40,14 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     z-index: 2;
+    box-shadow: rgba(12, 2, 121, 0.04) 0px 3px 5px;
 }
-#logo img{
-    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    object-fit: cover;
-
+#logo {
+    margin-left: 20px;
+    font-style: oblique;
+    font-size: 40px;
+    color: #E9E8E8;
+    
 }
 #menu-bar{
     margin-right: 30px;
@@ -62,11 +58,11 @@ body{
 }
 
 #menu {
+    color: #E9E8E8;
     transition: 0.5s ease-in;
     padding: 5px 10px;
     text-decoration: none;
     display: block;
-    color: #E9E8E8;;
 }
 
 #dropdown{
@@ -74,11 +70,11 @@ body{
 }
 
 #drpbutton{
+    color: #E9E8E8;
     transition: 0.5s ease-in;
     text-decoration: none;
     display: block;
     padding: 5px 12px;
-    color: #E9E8E8;
 }
 
 #drp-item{
@@ -93,7 +89,6 @@ body{
 }
 
 #drp-item a{
-    color: #323232;
     text-decoration: none;
     padding: 3px 8px;
     display: block;
@@ -102,14 +97,15 @@ body{
 }
 
 #menu:hover, #dropdown:hover #drpbutton{
-    color: brown;
+    color: #F99417;
+    transform:scale(1.02);
 }
 
 #dropdown:hover #drp-item{
     display: block;
 }
 #drp-item a:hover{
-   color: brown;
+   color: #F99417;
 }
 
 .hamburger-menu{
@@ -143,29 +139,34 @@ body{
     min-height: 790px;
     display: flex;
     flex-wrap: wrap;
+    color: #E9E8E8;
 }
 
 
 
 #call-action{
   
-    margin-top: 120px;
-    font-size: 40px;
-    color: #323232;
+    margin: auto;
+    text-align: center;
+    font-size: 35px;
+    color: #fef4f4;
     min-width: 50%;
     height: 500px;
   
 }
 
 #call-me{
+    margin-left: 380px;
     margin-top: 50px;
+    border-radius: 20px;
     display: block;
     text-decoration: none;
     padding: 10px;
     font-size: 25px;
-    background-color: #EF9A53;
+    background-color: #f87204;
     max-width: 150px;
-    color: white;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    color: rgb(218, 204, 204);
 }
 
 #call-me:hover{
@@ -180,10 +181,12 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 /* About me section*/
 
 #about-container{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 20px;
     transition: 0.5s ease-out;
     max-width: 100%;
     min-height: 700px;
-    background-color: #CD5888;
+    background-color: #7A4495;
     color: #DDD0C8;
     display: flex;
     flex-wrap: wrap;
@@ -200,7 +203,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     font-weight:bolder ;
 }
 #skills{
-    margin-top: 200px;
+    margin-top: 150px;
     height: 500px;
     min-width: 500px;
 
@@ -210,7 +213,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     margin-bottom: 10px;
     height: 35px;
     max-width: 100%;
-     background-color: antiquewhite;
+     background-color: #B270A2;
     text-align: right;
 
 }
@@ -221,37 +224,39 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
    
 }
 #html{
-    padding: 8px;
+    padding: 6px;
     width: 95%;
-    background-color: #3498db;
+    background-color: #FF8FB1;
 }
 
 #css{
-    padding: 8px;
+    padding: 6px;
     width: 90%;
-    background-color: #3498db;
+    background-color: #FF8FB1;
 }
 
 #javascript{
-    padding: 8px;
+    padding: 6px;
     width: 30%;
-    background-color: #3498db;
+    background-color: #FF8FB1;
 }
 
 #python{
-    padding: 8px;
+    padding: 6px;
     width: 50%;
-    background-color: #3498db;
+    background-color: #FF8FB1;
 }
 
 #my-image{
     object-fit: cover;
     filter: grayscale(10);
     transition: 0.3s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #my-image:hover{
     cursor: pointer;
     filter: none;
+    transform: scale(1.02);
 }
 
 #about-content{
@@ -271,7 +276,6 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     display: block;
     text-align: center;
     width: 380px;
-    background-color: grey;
     font-size: 40px;
 }
 #about-content h4{
@@ -292,10 +296,11 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
 /* portfolio*/
 #portfolio-container{
-    overscroll-behavior: ease;
     width: 100%;
     max-height: 1200px;
-    background-color: #913175;
+    background-color: #B270A2;
+    color: #E9E8E8;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 #portfolio-container h1{
     padding-top: 40px;
@@ -363,9 +368,11 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 /*Blog section*/
 
 #blog-container{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     width: 100%;
     height: 600px;
-    background-color: #C539B4;
+    background-color: #b04094;
+    color: #E9E8E8;
 }
 #blog-container h1{
     text-align: center;
@@ -409,6 +416,8 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     width: 100%;
     height: 700px;
     background-color: #852999;
+    color: #E9E8E8;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 #contact-container h1{
     text-align: center;
@@ -428,7 +437,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 #contact-num{
     width: 30%;
     height: 600px;
-    padding-top: 200px;
+    padding-top: 100px;
     padding-left: 40px;
 
 }
@@ -488,6 +497,7 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     background-color: #e09b80;
+    cursor: pointer;
 }
 
 /*footer section */
@@ -499,6 +509,10 @@ input[type="submit"]:hover{
     background-color: #323232;
     color: antiquewhite;
    padding-top: 100px;
+   display: block;
+}
+i:hover{
+    color: #b04094;
 }
 
 #icons{
@@ -506,17 +520,9 @@ input[type="submit"]:hover{
 }
 
 
-/*animation code*/
 
 
-@keyframes rotation {
-   from{
-    transform: rotateY(0deg)
-   }
-   to{
-    transform: rotateY(360deg);
-   }
-}
+
 
 
 
@@ -548,7 +554,7 @@ input[type="submit"]:hover{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color:  #7D6E83;
+        background-color: #B270A2;
         box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
         width: 100%;
         text-align: center;
@@ -565,10 +571,10 @@ input[type="submit"]:hover{
         transition: 0.8s ease-in;
         text-decoration: none;
         position: absolute;
-        min-width: 200px;
+        min-width: 100px;
         font-size: 20px;
         padding: 10px;
-        top: 60px;
+        top: 70px;
         left:400px;
         display: none;
     }
@@ -576,6 +582,10 @@ input[type="submit"]:hover{
         left: 0;
     }
 
+    #call-me{
+        margin-top: 50px;
+        margin-left: 180px;
+    }
     #my-image{
         width: 100%;
     }

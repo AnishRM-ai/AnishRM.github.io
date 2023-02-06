@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('img2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* header  */
+.Nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Logo  */
+.logo{
+    margin-left: 50px;
+    height: 60px;
+    width: 10%;
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* logo link  */
+a{
+    text-decoration: none;
+    color: white;
+}
+/* navigation list  */
+#navigate{
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 50px;
+}
+
+/* Navigation bar  */
+.linki{
+    text-decoration: none;
+    padding: 10px 5px;
+    font-family: monospace;
+    font-size: 20px;
+    display: inline-block;
+
+}
+/* nav hover  */
+.linki:hover{
+    color: orange;
+    transform: scale(1.2);
+    transition-duration: 0.8s;
+
+}
+/* sub content  */
+
+.p1{
+    font-size: 20px;
+    font-family: monospace;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-top:  150px; ;
+
+}
+.p1:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+/* title   */
+
+.h1{
+    font-size: 100px;
+    margin-top: 10px;
+    color: whitesmoke;
+    font-family: monospace;
+    text-align: center;
+}
+
+.h1:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+/*BUtton*/
+.button{
+    border: 1px;
+    border-radius: 50px;
+    border-color: aliceblue;
+    height: 90px;
+    width: 400px;
+    border-style: solid;
+    font-size: 80px;
+    margin-top: 130px;
+    border-color: whitesmoke;
+    font-weight: bold;
+    font-family: monospace;
+    display: inline-block;
+    color: aliceblue;
+   text-align: center;
+
+}
+/* button hover*/
+.button:hover{
+   animation: glow 2s ease-in-out;
+
+}
+/* animation button */
+@keyframes glow{
+    0%{
+        box-shadow:0 0 25px silver, 
+        0 0 50px burlywood ;
+    }
+}
+
+

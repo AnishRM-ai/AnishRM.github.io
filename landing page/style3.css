@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('img1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* header  */
+.Nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Logo  */
+.logo{
+    margin-left: 50px;
+    height: 60px;
+    width: 10%;
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* logo link  */
+a{
+    text-decoration: none;
+    color: white;
+}
+/* navigation list  */
+#navigate{
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 50px;
+}
+
+/* Navigation bar  */
+.linki{
+    text-decoration: none;
+    padding: 10px 5px;
+    font-family: monospace;
+    font-size: 20px;
+    display: inline-block;
+
+}
+/* nav hover  */
+.linki:hover{
+    color: orange;
+    transform: scale(1.2);
+
+}
+
+/* Gallery Contents*/
+.gallery{
+    height: 650px;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    color: whitesmoke;
+    font-family: monospace;
+
+}
+
+.card1{
+    width: 100%;
+    height: 580px;
+
+}
+
+img{
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+    padding: 20px;
+
+}
+
+.comments{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+
+
+}
+
+.card1:hover{
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
