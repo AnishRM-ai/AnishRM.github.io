@@ -3,30 +3,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Itim', cursive;
-    color: #FCE2DB;
+   
 }
 html{
     scroll-behavior: smooth;
 }
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    display: none;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    display: none;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-  display: none;
-  }
+
  
   
 /* Header and navigation bar*/
@@ -140,13 +122,14 @@ html{
     display: flex;
     flex-wrap: wrap;
     color: #E9E8E8;
+    justify-content: center;
 }
 
 
 
 #call-action{
   
-    margin: auto;
+    margin-top: 200px;
     text-align: center;
     font-size: 35px;
     color: #fef4f4;
@@ -157,13 +140,13 @@ html{
 
 #call-me{
     margin-left: 380px;
-    margin-top: 50px;
+    margin-top: 100px;
     border-radius: 20px;
     display: block;
     text-decoration: none;
     padding: 10px;
     font-size: 25px;
-    background-color: #f87204;
+   border: #F99417 1px solid;
     max-width: 150px;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     color: rgb(218, 204, 204);
@@ -173,7 +156,7 @@ html{
     filter: sepia(10);
     transition:0.5s ease-in;
     background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
 }
 
@@ -262,7 +245,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 #about-content{
   margin: auto;
     height: 700px;
-    width:35% ;
+    width:33% ;
     
 }
 #about-content h2{
@@ -415,7 +398,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 #contact-container{
     width: 100%;
     height: 700px;
-    background-color: #852999;
+    background-color: #C850C0;
     color: #E9E8E8;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -554,7 +537,7 @@ i:hover{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #B270A2;
+        background-color:#7A4495;
         box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
         width: 100%;
         text-align: center;
